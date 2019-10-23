@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Celcius"
+    tools:showIn="@layout/activity_celcius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="258dp">
+
+        <TextView
+            android:id="@+id/tx_celciusMenu"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_celcius"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/et_inputField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_convertCelcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ConvertCelcius"
+            android:text="Convert" />
+
+        <TextView
+            android:id="@+id/tx_celcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="4dp"
+            android:text="Celcius : "
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tx_farenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farenheit : "
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tx_kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelvin : "
+            android:textSize="30sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

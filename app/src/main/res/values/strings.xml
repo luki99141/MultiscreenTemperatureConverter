@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="title_activity_farenheit">Farenheit</string>
+    <string name="title_activity_celcius">Celcius</string>
+</resources>
